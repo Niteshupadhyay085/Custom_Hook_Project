@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <h1>Product List</h1>
       <ul>
-        {data.slice(0, 48).map((item) => (
+        {data.slice(0, 40).map((item) => (
           <li key={item.id}>
             <img src={item.images[0]} alt={item.title} height="100" width="100" />
             {item.title}
