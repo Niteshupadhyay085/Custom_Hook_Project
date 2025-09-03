@@ -50,6 +50,14 @@ h1 {
   background-color: #000;
   color: #fff;
 }
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+  background-color: #000;
+  color: #fff;
+}
 
 .photo-card p {
   font-size: 14px;

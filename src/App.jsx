@@ -13,7 +13,13 @@ function App() {
   );
 }
 
-  if (error) return <h2>Error: {error}</h2>;
+  if (error) {
+    return (
+      <div className="center-container">
+        <h2>Error: {error}</h2>
+      </div>
+    );
+  }
 
   // Some random background colors
   const colors = ["#7FFF00", "#8A2BE2", "#00FF7F", "#FF1493", "#1E90FF", "#ADFF2F", "#FF4500", "#9400D3"];
