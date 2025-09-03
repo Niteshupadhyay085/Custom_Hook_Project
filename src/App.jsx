@@ -5,7 +5,6 @@ import "./App.css";
 function App() {
   const { data, loading, error } = useFetch("https://api.escuelajs.co/api/v1/products");
 
-
   if (loading) {
   return (
     <div className="loading-container">
@@ -13,6 +12,7 @@ function App() {
     </div>
   );
 }
+
   if (error) return <h2>Error: {error}</h2>;
 
   // Some random background colors
@@ -20,18 +20,9 @@ function App() {
 
   return (
     <div className="App">
-<<<<<<< HEAD
-      <h1>Product List</h1>
-      <ul>
-        {data.slice(0, 40).map((item) => (
-          <li key={item.id}>
-            <img src={item.images[0]} alt={item.title} height="100" width="100" />
-            {item.title}
-          </li>
-=======
       <h1>Photos</h1>
       <div className="photo-grid">
-        {data.slice(0, 1920).map((item, index) => (
+        {data.slice(0, 2400).map((item, index) => (
           <div className="photo-card" key={item.id}>
             <div
               className="placeholder"
@@ -41,7 +32,6 @@ function App() {
             </div>
             <p>{item.title}</p>
           </div>
->>>>>>> 816dfe3 (Image card added)
         ))}
       </div>
     </div>
